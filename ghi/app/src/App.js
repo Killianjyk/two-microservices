@@ -10,11 +10,15 @@ function App() {
       <Nav />
       <div className="container">
         <Routes>
-          <Route path="/" element={<MainPage />} />
+        <Route path="shoes">
+            <Route index element={<ShoeList />} />
+            <Route path="new" element={<ShoeForm />} />
+            </Route>
           <Route path="hats">
             <Route index element={<HatList />} />
             <Route path="new" element={<HatForm />} />
           </Route>
+          <Route path="/" element={<MainPage />} />
         </Routes>
       </div>
     </BrowserRouter>
