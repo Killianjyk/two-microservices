@@ -2,10 +2,8 @@
 
 Team:
 
-* Person 1 - Which microservice?
-* Jeny Kim - Shoes
-- Killian - hats
-- Person 2 - Which microservice?
+- Killian Kim - Hats
+- Jeny Kim - Shoes
 
 ## Design
 
