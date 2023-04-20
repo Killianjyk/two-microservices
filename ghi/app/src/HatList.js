@@ -33,6 +33,7 @@ function HatList() {
 
 
     return (
+        <>
         <table className="table table-striped">
             <thead>
                 <tr>
@@ -59,6 +60,8 @@ function HatList() {
                 })}
             </tbody>
         </table>
+        <a href="/hats/new">Add new hat</a>
+        </>
     );
 }
 

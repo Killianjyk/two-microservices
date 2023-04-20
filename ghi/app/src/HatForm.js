@@ -16,6 +16,7 @@ function HatForm() {
         if (response.ok) {
             const data = await response.json();
             setLocations(data.locations)
+            console.log(data.locations)
         }
     }
 
@@ -23,7 +24,7 @@ function HatForm() {
         event.preventDefault();
 
         const hatURL = 'http://localhost:8090/api/hats/';
-
+        console.log(formData)
         const fetchConfig = {
             method: 'post',
             body: JSON.stringify(formData),
@@ -82,7 +83,7 @@ function HatForm() {
                             <option value="">Choose a location</option>
                             {locations.map(location => {
                                 return (
-                                <option key={location.import_href} value={location.import_href}>
+                                <option key={location.id} value={location.href}>
                                     {location.closet_name} - {location.section_number} - {location.shelf_number}
                                 </option>
                                 );
