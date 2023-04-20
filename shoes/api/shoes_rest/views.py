@@ -12,14 +12,18 @@ class BinVOEncoder(ModelEncoder):
     model = BinVO
     properties = [
         "closet_name",
-        "import_href"
+        "import_href",
+        "bin_number",
+        "bin_size",
     ]
 
 class ShoeListEncoder(ModelEncoder):
     model = Shoe
     properties = [
         "model_name",
-        "id"
+        "id",
+        "manufacturer",
+        "color"
     ]
 
     def get_extra_data(self, o):
@@ -32,7 +36,7 @@ class ShoeDetailEncoder(ModelEncoder):
         "model_name",
         "color",
         "picture_url",
-        "bins"
+        "id"
     ]
     encoders = {
         "bins": BinVOEncoder(),
