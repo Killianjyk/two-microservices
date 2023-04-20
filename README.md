@@ -2,8 +2,8 @@
 
 Team:
 
-- Killian Kim - Hats
-- Jeny Kim - Shoes
+* Killian Kim - Hats
+* Jeny Kim - Shoes
 
 ## Design
 
